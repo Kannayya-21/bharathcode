@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMart</title>
+    <link rel="stylesheet" href="supermart.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body style="margin: 0%; padding: 0%;">
+    <div class="main">
+        <div class="brand">
+            <div class="cont1">
+                <div class="logo">
+                    <p class="logo one">BS</p>
+                    <p class="logo two">Mart</p>
+                </div>
+                <div class="imagecont" id="imagecont">
+                    <img src="./image.png" alt="Category Image" class="image" id="catimg">
+                </div>
+                <div class="disc">
+                   <p style="overflow: hidden;">Most vegetables are low in calories and have a water content of over 70 percent, with only about 3.5 percent protein and less than 1 percent fat. Vegetables are good sources of minerals, especially calcium and iron, and vitamins, principally A and C. Nearly all vegetables are rich in dietary fiber and antioxidants.</p>
+                </div>
+            </div>
+            <div class="valid">
+                <form class="form">
+                    <p class="title">SuperMart - Management</p>
+                    <hr style="border: solid black 1px; width: 90%;">
+                    <input type="text" class="item inp" placeholder=" Enter the item" id="item">
+                    <small class="warn iw" id="iw">Please enter the item</small>
+                    <select name="Category" class="cat" id="selectcat">
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Dairy" id="liquid">Fruits</option>
+                        <option value="Grains">Grains</option>
+                        <option value="Beverages" id="liquid2">Floures</option>
+                    </select>
+                    <input type="number" placeholder=" Items Price" class="price inp" id="price">
+                    <small class="warn pw" id="pw">Please enter the price</small>
+                    <input type="number" class="avail inp" placeholder=" Total Quantity" id="avail">
+                    <small class="warn aw" id="aw">Please Mention the quantity</small>
+                    <div class="btntags">
+                        <button type="submit" class="btn onee" id="btn">Add Item</button>
+                        <button type="button" class="btn twoo" id="clear">Clear Item</button>
+                        <button type="button" class="btn three" id="clearform">Clear Form</button>
+                    </div>
+                </form>
+                <button class="homebtn">Home</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Images for different categories -->
+    <img src="./image copy.png" alt="Dairy Image" id="dairypic" style="display:none;">
+    <img src="./image copy 2.png" alt="Beverages Image" id="beveragespic" style="display:none;">
+    <img src="./image copy 3.png" alt="Grains Image" id="grainspic" style="display:none;">
+    
+    <script src="supermart.js"></script>
+</body>
+</html>
